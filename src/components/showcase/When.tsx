@@ -1,7 +1,5 @@
 import React from 'react';
 import photo1 from '../../assets/pictures/wedding1.jpg';
-import meNow from '../../assets/pictures/currentme.jpg';
-import { Link } from 'react-router-dom';
 
 export interface WhenProps {}
 
