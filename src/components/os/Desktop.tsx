@@ -2,15 +2,14 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Colors from '../../constants/colors';
 import ShowcaseExplorer from '../applications/ShowcaseExplorer';
 import Doom from '../applications/Doom';
-import OregonTrail from '../applications/OregonTrail';
 import ShutdownSequence from './ShutdownSequence';
-// import ThisComputer from '../applications/ThisComputer';
-import Henordle from '../applications/Henordle';
+import ThisComputer from '../applications/ThisComputer';
 import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
-import Scrabble from '../applications/Scrabble';
 import { IconName } from '../../assets/icons';
 import Credits from '../applications/Credits';
+import PersiaApp from '../applications/Persia';
+import KeenApp from '../applications/Keen';
 
 export interface DesktopProps {}
 
@@ -24,23 +23,23 @@ const APPLICATIONS: {
         component: React.FC<ExtendedWindowAppProps<any>>;
     };
 } = {
-    // computer: {
-    //     key: 'computer',
-    //     name: 'This Computer',
-    //     shortcutIcon: 'computerBig',
-    //     component: ThisComputer,
-    // },
+    computer: {
+        key: 'computer',
+        name: 'PC',
+        shortcutIcon: 'computerBig',
+        component: ThisComputer,
+    },
     showcase: {
         key: 'showcase',
-        name: 'My Showcase',
+        name: 'Información Boda',
         shortcutIcon: 'showcaseIcon',
         component: ShowcaseExplorer,
     },
-    trail: {
-        key: 'trail',
-        name: 'The Oregon Trail',
-        shortcutIcon: 'trailIcon',
-        component: OregonTrail,
+    persia: {
+        key: 'persia',
+        name: 'Prince of Persia',
+        shortcutIcon: 'persiaIcon',
+        component: PersiaApp,
     },
     doom: {
         key: 'doom',
@@ -48,21 +47,15 @@ const APPLICATIONS: {
         shortcutIcon: 'doomIcon',
         component: Doom,
     },
-    scrabble: {
-        key: 'scrabble',
-        name: 'Scrabble',
-        shortcutIcon: 'scrabbleIcon',
-        component: Scrabble,
-    },
-    henordle: {
-        key: 'henordle',
-        name: 'Henordle',
-        shortcutIcon: 'henordleIcon',
-        component: Henordle,
+    keen: {
+        key: 'keen',
+        name: 'Keen 4',
+        shortcutIcon: 'keenIcon',
+        component: KeenApp,
     },
     credits: {
         key: 'credits',
-        name: 'Credits',
+        name: 'Créditos',
         shortcutIcon: 'credits',
         component: Credits,
     },
@@ -105,7 +98,7 @@ const Desktop: React.FC<DesktopProps> = (props) => {
         });
 
         newShortcuts.forEach((shortcut) => {
-            if (shortcut.shortcutName === 'My Showcase') {
+            if (shortcut.shortcutName === 'Información Boda') {
                 shortcut.onOpen();
             }
         });

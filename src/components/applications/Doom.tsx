@@ -17,7 +17,7 @@ const DoomApp: React.FC<DoomAppProps> = (props) => {
             windowTitle="Doom"
             windowBarColor="#1C1C1C"
             windowBarIcon="windowGameIcon"
-            bottomLeftText={'Powered by JSDOS & DOSBox'}
+            bottomLeftText={'Mouse y teclado baby'}
             closeWindow={props.onClose}
             onInteract={props.onInteract}
             minimizeWindow={props.onMinimize}

@@ -32,59 +32,16 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
     return !isHome ? (
         <div style={styles.navbar}>
             <div style={styles.header}>
-                <h1 style={styles.headerText}>Henry</h1>
-                <h1 style={styles.headerText}>Heffernan</h1>
-                <h3 style={styles.headerShowcase}>Showcase '22</h3>
+                <h1 style={styles.headerText}>BODA</h1>
+                <h1 style={styles.headerText}>Gaby y Diego</h1>
+                <h3 style={styles.headerShowcase}>2025</h3>
             </div>
             <div style={styles.links}>
                 <Link containerStyle={styles.link} to="" text="HOME" />
-                <Link containerStyle={styles.link} to="about" text="ABOUT" />
-                <Link
-                    containerStyle={styles.link}
-                    to="experience"
-                    text="EXPERIENCE"
-                />
-                <Link
-                    containerStyle={Object.assign(
-                        {},
-                        styles.link,
-                        projectsExpanded && styles.expandedLink
-                    )}
-                    to="projects"
-                    text="PROJECTS"
-                />
-                {
-                    // if current path contains projects
-                    projectsExpanded && (
-                        <div style={styles.insetLinks}>
-                            <Link
-                                containerStyle={styles.insetLink}
-                                to="projects/software"
-                                text="SOFTWARE"
-                            />
-                            <Link
-                                containerStyle={styles.insetLink}
-                                to="projects/music"
-                                text="MUSIC"
-                            />
-                            <Link
-                                containerStyle={styles.insetLink}
-                                to="projects/art"
-                                text="ART"
-                            />
-                        </div>
-                    )
-                }
-                <Link
-                    containerStyle={styles.link}
-                    to="contact"
-                    text="CONTACT"
-                />
+                <Link containerStyle={styles.link} to="when" text="¿Cuándo?" />
+                <Link containerStyle={styles.link} to="info" text="Más Información" />
             </div>
             <div style={styles.spacer} />
-            <div style={styles.forHireContainer} onMouseDown={goToContact}>
-                {/* <img src={forHire} style={styles.image} alt="" /> */}
-            </div>
         </div>
     ) : (
         <></>

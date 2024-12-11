@@ -7,38 +7,20 @@ export interface CreditsProps extends WindowAppProps {}
 
 const CREDITS = [
     {
-        title: 'Engineering & Design',
-        rows: [['Henry Heffernan', 'All']],
+        title: 'Mixeada de código',
+        rows: [['Diego Auyón', 'All']],
     },
     {
-        title: 'Modeling & Texturing',
+        title: 'Los novios',
         rows: [
-            ['Henry Heffernan', 'Texturing, Composition, & UV'],
-            ['Mickael Boitte', 'Computer Model'],
-            ['Sean Nicolas', 'Environment Models'],
+            ['Diego Auyón', 'El novio'],
+            ['Gabriela García', 'La novia'],
         ],
     },
     {
-        title: 'Sound Design',
+        title: 'Inspiration / Code / Idea',
         rows: [
-            ['Henry Heffernan', 'Mixing, Composition, & Foley'],
-            ['Sound Cassette', 'Office Ambience'],
-            ['Windows 95 Startup Sound', 'Microsoft'],
-        ],
-    },
-    {
-        title: 'Special Thanks',
-        rows: [
-            ['Bruno Simon', 'SimonDev'],
-            ['Lorelei Kravinsky', 'Scott Bass'],
-            ['Trey Briccetti', 'Mom, Dad & Angela'],
-        ],
-    },
-    {
-        title: 'Inspiration',
-        rows: [
-            ['Bruno Simon', 'Jesse Zhou'],
-            ['Pink Yellow', 'Vivek Patel'],
+            ['Henry Heffernan']
         ],
     },
 ];
@@ -73,20 +55,20 @@ const Credits: React.FC<CreditsProps> = (props) => {
             left={48}
             width={1100}
             height={800}
-            windowTitle="Credits"
+            windowTitle="Créditos"
             windowBarIcon="windowExplorerIcon"
             closeWindow={props.onClose}
             onInteract={props.onInteract}
             minimizeWindow={props.onMinimize}
-            bottomLeftText={'© Copyright 2022 Henry Heffernan'}
+            bottomLeftText={'© Boda de Diego y Gabriela'}
         >
             <div
                 onMouseDown={nextSlide}
                 className="site-page"
                 style={styles.credits}
             >
-                <h2>Credits</h2>
-                <p>henryheffernan.com, 2022</p>
+                <h2>Créditos</h2>
+                <p>2024</p>
                 <br />
                 <br />
                 <br />
@@ -112,7 +94,7 @@ const Credits: React.FC<CreditsProps> = (props) => {
                         </motion.div>
                     }
                 </div>
-                <p>Click to continue...</p>
+                <p>Click para continuar...</p>
                 <br />
                 <div style={styles.nextSlideTimer}>
                     {/* make a time number of dots */}

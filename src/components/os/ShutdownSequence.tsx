@@ -38,16 +38,16 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
         return time;
     };
 
-    const NORMAL_SHUTDOWN = `Beginning Pre-Shutdown Sequence... ${_F}
+    const NORMAL_SHUTDOWN = `Comenzando descarga de virus a tu compu... ${_F}
     Connecting to HHOS01/13:2000.${_F}.${_F}.${_F}
     |
-    Established connection to HH0S01/13:2000, attempting data transfer.
+    Estableciendo enlace a HH0S01/13:2000, intentando transferencia de datos.
     |
     ${_F}
     |Analyzing data... Done.| ${_F}
     |Packing Transfer... Done.| ${_F}
     |Beginning Transfer...| ${_F}
-    |[${getTime()} START]| .${_F}.....${_X}.|............|.${_S}.|......|.${_S}...........${_M} |[Transfer Failed.]|
+    |[${getTime()} START]| .${_F}.....${_X}.|............|.${_S}.|......|.${_S}...........${_M} |[Transferencia Fallida.]|
 
 
     |(HHOS01/13:200:60099) [DEP_ANALYTICS_SERVER_ON_AFTER_SETUP_MIDDLEWARE] InvalidFormatting: 'onAnalyticsConversion' option received invalid parameters. Please contact a server administrator to resolve the issue.|
@@ -59,9 +59,9 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     (HHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:08]
     (HHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:12]
     (HHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:14]
-    FATAL ERROR: (HHOS01/13:200:60099) Server became unresponsive and the transfer failed. Unable to shutdown computer. 
+    FATAL ERROR: (HHOS01/13:200:60099) El servidor dejó de responder y la transferencia falló. No se puede apagar la computadora.
     |
-    Aborting shutdown sequence and rebooting.
+    Abortando la secuencia de apagado y reiniciando.
 
 
 
@@ -70,8 +70,8 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     `;
 
     const SHUTDOWN_3 = `
-    Damn${_S}.${_S}.${_S}. ${_M} You really wanna shutdown this computer huh?${_L}
-    Well, I hate to break it to you,${_S} but its impossible to shutdown...${_S} It will always reboot.
+    Wow${_S}.${_S}.${_S}. ${_M} ¿Qué querés probar? ¿Que sos alguien de QA?${_L}
+    No voy a hacer nada,${_S} tampoco apagar esta computadora...${_S} Sólo se va a reiniciar .
     ${_L}
     |Goodbye!|
     ${_M}
@@ -81,10 +81,9 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     `;
 
     const SHUTDOWN_4 = `
-    Did you not read the last message?${_S} This computer will A${_F}L${_F}W${_F}A${_F}Y${_F}S${_F} reboot, the shutdown sequence is just here for show. It's not actually doing anything.
+    ¿De verdad crees que hace algo?${_S} Esta computadora S${_F}I${_F}E${_F}M${_F}P${_F}R${_F}E${_F} se va a reiniciar, el apagado es sólo por molestar. Esto no hace nada
     ${_M}
-    I literally spent months on this website to give you other things to do.
-    You can play DOOM, Oregon Trail, Scrabble... but all you wanna do is shut the computer down.
+    Se pueden hacer otras cosas vaaaaaaaarias cosas, pero apagar no es una de ellas.
     ${_L}
     |Goodbye Again!|
     ${_M}
@@ -93,66 +92,64 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     `;
 
     const SHUTDOWN_5 = `
-    Really${_X}?${_X}?${_X}?
+    ¿En serio${_X}?${_X}?${_X}?
     ${_M}
-    What did I do to deserve this? ${_M}What do you want from me????
+    ¿Qué hice para merecer esto? ${_M}¿¿¿¿Qué quieres de mí????
     ${_L}
     
-    Rebooting${_F}.${_F}.${_F}.
+    REINICIANDO${_F}.${_F}.${_F}.
     `;
 
     const SHUTDOWN_6 = `
     ${_M}>${_M}:${_M}(${_M}
 
 
-    Rebooting${_F}.${_F}.${_F}.
+    REINICIANDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO${_F}.${_F}.${_F}.
     `;
 
     const SHUTDOWN_7 = `
-    7th shutdown... lucky number 7! ${_M}
+    ¡Otra apagada ${_M}
 
-    In light of this HUGE milestone, let me try to provide some entertainment! ${_M}Counting one by one to my all time favorite number:
+    Ya que querés leer lo que hay aquí:${_M} Contaré número por número
     ${_L}
     7${_M},212${_M},313
-    ${_M} Strap in! ${_S} | [Time remaining: Approximately 4,000 hours (0.5 numbers/second)]|
+    ${_M} ¡Vamos pues! ${_S} | [Tiempo aproximado: Aproximadamente 4,000 horas (0.5 números/segundo)]|
 
     1${_M},2${_M},3${_M},4${_M},5${_M},6${_M},7${_M},8${_M},9${_M},10${_M},11${_M},12${_M},13${_S}.${_S}.${_S}.
 
-    Alright I'm bored...
+    Ya me aburrí...
     ${_M}
     
     
-    Rebooting${_F}.${_F}.${_F}.
+    Reiniciando${_F}.${_F}.${_F}.
     `;
 
     const SHUTDOWN_8 = `
-    Your commitment is admirable,${_S} truly. ${_M}And even though I don't want you to turn off my really cool and epic computer, ${_M} I think I'm ready to concede. ${_M}
+    Bruuuuuuuuuuuuuuuuuuuuhhhhhhhh,${_S} por favor. ${_M} ¿Por qué? ${_M} ¿Para qué? ${_M}
 
     ${_L}
-    |SIKE!!!|
+    |Ni modo!!!|
 
 
-    Rebooting${_F}.${_F}.${_F}.
+    R e i n i c i a n d o${_F}.${_F}.${_F}.
     `;
 
     const SHUTDOWN_10 = `
-    Alright fine, the message is clear${_M}. You want to turn off the computer. ${_M}
+    Weno${_M}. Se apaga pues. ${_M}
 
-    You win${_S}.${_S}.${_S}.${_S} fair and square ${_M}
+    Ni modo${_S}.${_S}.${_S}.${_S} bajo el virus nigeriano${_M}
 
-    Truthfully I can't keep on spending time writing out these messages...${_M} and if the world you want to live in is a world without me (or my epic really cool and sick computer), ${_M}so be it.
+    Ya me aburrí de escribir...${_M} me despido, ${_M}.
 
     ${_L}
-    I won't forget you...
+    Adiós...
     ${_L}
 
 
-    Shutting${_M} Down${_M}.${_M}.${_M}.
+    Apagando${_M} Computadora${_M}.${_M}.${_M}.
     `;
 
     const SHUTDOWN_MAP = [
-        NORMAL_SHUTDOWN,
-        NORMAL_SHUTDOWN,
         NORMAL_SHUTDOWN,
         SHUTDOWN_3,
         SHUTDOWN_4,
