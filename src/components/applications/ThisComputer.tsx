@@ -1,16 +1,18 @@
 import React from 'react';
 // import DesktopShortcut from '../os/DesktopShortcut';
 import Window from '../os/Window';
+import useInitialWindowSize from '../../hooks/useInitialWindowSize';
 
 export interface ThisComputerProps extends WindowAppProps {}
 
 const ThisComputerApp: React.FC<ThisComputerProps> = (props) => {
+    const { initWidth, initHeight } = useInitialWindowSize({ margin: 100 });
     return (
         <Window
-            top={20}
-            left={20}
-            width={600}
-            height={400}
+            top={24}
+            left={56}
+            width={initWidth}
+            height={initHeight}
             windowBarIcon="computerSmall"
             windowTitle="PC"
             closeWindow={props.onClose}
@@ -19,8 +21,8 @@ const ThisComputerApp: React.FC<ThisComputerProps> = (props) => {
         >
             <div className="site-page">
                 <iframe
-                    src="https://oldgoogle.neocities.org/1998/"
-                    title="google"
+                    src="https://info.diegoygaby.com/"
+                    title="Inforamción de la boda"
                     width="100%"
                     height="100%"
                 />

@@ -15,8 +15,9 @@ const Info: React.FC<InfoProps> = (props) => {
             <div className="text-block">
                 <p>
                     No sé, pero pueden ir al sitio de Gaby sobre la boda, fijo
-                    encuentran toda la información que necesitan. LINK DEL SITIO
+                    encuentran toda la información que necesitan.
                 </p>
+                <a href="https://info.diegoygaby.com">INFORMACIÓN REAL</a>
                 <br />
             </div>
             <div className="text-block">
@@ -50,7 +51,7 @@ const Info: React.FC<InfoProps> = (props) => {
                 </div>
                 <br />
                 <br />
-                <h3>VAYAN ACÁ PARA MÁS INFORMACIÓN</h3>
+                <h3><a href='https://info.diegoygaby.com>'>CLICKEE AQUÍ</a></h3>
                 <br />
                
             </div>
