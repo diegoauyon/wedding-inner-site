@@ -15,7 +15,7 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
     return (
         <Window
             top={24}
-            left={56}
+            left={100}
             width={initWidth}
             height={initHeight}
             windowTitle="Boda Diego y Gaby 2025"

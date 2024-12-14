@@ -51,7 +51,7 @@ const Info: React.FC<InfoProps> = (props) => {
                 </div>
                 <br />
                 <br />
-                <h3><a href='https://info.diegoygaby.com>'>CLICKEE AQUÍ</a></h3>
+                <a href='https://info.diegoygaby.com>'>CLICKEE AQUÍ</a>
                 <br />
                
             </div>

@@ -6,7 +6,7 @@ export interface ShutdownSequenceProps {
     setShutdown: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const SPEED_MULTIPLIER = 1;
+const SPEED_MULTIPLIER =0.2
 
 const _F = `>${200 * SPEED_MULTIPLIER}<`;
 const _X = `>${500 * SPEED_MULTIPLIER}<`;
@@ -151,9 +151,10 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
 
     const SHUTDOWN_MAP = [
         NORMAL_SHUTDOWN,
-        SHUTDOWN_3,
+        NORMAL_SHUTDOWN,
         SHUTDOWN_4,
         SHUTDOWN_5,
+        SHUTDOWN_3,
         SHUTDOWN_6,
         SHUTDOWN_7,
         SHUTDOWN_8,
@@ -223,21 +224,21 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     };
 
     useEffect(() => {
-        delay(2000).then(() => {
+        delay(1000).then(() => {
             setLoading(false);
             delay(1000).then(() => {
                 const shutdown = SHUTDOWN_MAP[numShutdowns];
-                if (numShutdowns === 9) {
-                    delay(10000).then(() => {
+                if (numShutdowns === 8) {
+                    delay(4000).then(() => {
                         setLoading(true);
-                        delay(6000).then(() => {
+                        delay(2000).then(() => {
                             setShutdown(false);
                         });
                     });
-                } else if (numShutdowns === 10) {
+                } else if (numShutdowns === 9) {
                     typeText(0, '', shutdown, setText, () => {
                         setLoading(true);
-                        delay(6000).then(() => {
+                        delay(2000).then(() => {
                             setLoading(false);
                             setEE(true);
                         });
@@ -245,7 +246,7 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
                 } else {
                     typeText(0, '', shutdown, setText, () => {
                         setLoading(true);
-                        delay(6000).then(() => {
+                        delay(2000).then(() => {
                             setShutdown(false);
                         });
                     });
