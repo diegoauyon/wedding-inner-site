@@ -193,7 +193,8 @@ const Window: React.FC<WindowProps> = (props) => {
         <div onMouseDown={onWindowInteract} style={styles.container}>
             <div
                 style={Object.assign({}, styles.window, {
-                    width,
+                    maxWidth: width,
+                    width: '90%',
                     height,
                     top,
                     left,

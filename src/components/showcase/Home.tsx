@@ -19,11 +19,24 @@ const Home: React.FC<HomeProps> = (props) => {
                 <Link containerStyle={styles.link} to="when" text="¿Cuando?" />
                 <Link containerStyle={styles.link} to="info" text="Más información" />
             </div>
+
+            <div style={styles.hint}>
+                <p>{`<------------ Los íconos se pueden doble clickear (Si estás en desktop hasta se pueden arrastrar)`}</p>
+                <p>{`<------------ La compu se puede apagar también`}</p>
+            </div>
         </div>
     );
 };
 
 const styles: StyleSheetCSS = {
+    hint: {
+        position: 'absolute',
+        display: 'flex',
+        flexDirection: 'column',
+        bottom: 0,
+        left: 0,
+        padding: 16,
+    },
     page: {
         left: 0,
         right: 0,

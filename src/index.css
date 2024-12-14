@@ -258,9 +258,9 @@ input:active {
 .site-page-content {
     display: flex;
     flex-direction: column;
-    margin-left: 300px;
+    margin-left: 200px;
     width: 100%;
-    padding: 64px;
+    padding: 16px;
     padding-top: 32px;
     padding-left: 16px;
     overflow-y: scroll;

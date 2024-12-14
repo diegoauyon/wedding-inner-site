@@ -10,8 +10,8 @@ const DoomApp: React.FC<DoomAppProps> = (props) => {
 
     return (
         <Window
-            top={10}
-            left={10}
+            top={90}
+            left={100}
             width={width}
             height={height}
             windowTitle="Doom"

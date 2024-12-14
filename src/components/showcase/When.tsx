@@ -36,7 +36,7 @@ const styles: StyleSheetCSS = {
     },
     image: {
         height: 'auto',
-        width: '100%',
+        width: '60%',
     },
     topImage: {
         height: 'auto',

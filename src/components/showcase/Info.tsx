@@ -1,5 +1,6 @@
 import React from 'react';
 import photo2 from '../../assets/pictures/wedding2.jpg';
+import DesktopShortcut from '../os/DesktopShortcut';
 
 //import { Link } from 'react-router-dom';
 
@@ -26,7 +27,7 @@ const Info: React.FC<InfoProps> = (props) => {
                         style={{
                             flex: 1,
                             textAlign: 'justify',
-                            alignSelf: 'center',
+                            alignSelf: 'flex-start',
                             flexDirection: 'column',
                         }}
                     >
@@ -39,6 +40,13 @@ const Info: React.FC<InfoProps> = (props) => {
                         <p>
                         Así que hay 2 versiones del sitio, mi versión y la de Gaby :) 
                         </p>
+
+                        <div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center', flex: 1, textAlign: 'center' , paddingTop: '40px'}}>
+                            <a href="https://info.diegoygaby.com">INFORMACIÓN REAL</a>
+                            <a href="https://info.diegoygaby.com">INFORMACIÓN REAL</a>
+                            <a href="https://info.diegoygaby.com">INFORMACIÓN REAL</a>
+                            <a href="https://info.diegoygaby.com">INFORMACIÓN REAL</a>
+                        </div>
                     </div>
                     <div style={styles.verticalImage}>
                         <img src={photo2} style={styles.image} alt="" />
@@ -49,9 +57,6 @@ const Info: React.FC<InfoProps> = (props) => {
                         </p>
                     </div>
                 </div>
-                <br />
-                <br />
-                <a href='https://info.diegoygaby.com>'>CLICKEE AQUÍ</a>
                 <br />
                
             </div>

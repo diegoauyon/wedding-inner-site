@@ -39,7 +39,7 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
 
 const styles: StyleSheetCSS = {
     navbar: {
-        width: 300,
+        width: 200,
         height: '100%',
         flexDirection: 'column',
         padding: 48,

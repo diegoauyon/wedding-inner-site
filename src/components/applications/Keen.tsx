@@ -10,8 +10,8 @@ const KeenApp: React.FC<KeenAppProps> = (props) => {
 
     return (
         <Window
-            top={10}
-            left={10}
+            top={70}
+            left={100}
             width={width}
             height={height}
             windowTitle="Keen"

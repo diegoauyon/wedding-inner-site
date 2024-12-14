@@ -10,8 +10,8 @@ const PersiaApp: React.FC<PersiaAppProps> = (props) => {
 
     return (
         <Window
-            top={10}
-            left={10}
+            top={120}
+            left={100}
             width={width}
             height={height}
             windowTitle="Prince of Persia"
