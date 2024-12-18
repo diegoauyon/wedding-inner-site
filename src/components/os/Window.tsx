@@ -189,8 +189,16 @@ const Window: React.FC<WindowProps> = (props) => {
         lastClickInside.current = true;
     };
 
+    let id = props.windowTitle ?? 'generic'
+    id = id.replace(/ /g, '-').toLowerCase()
+
     return (
-        <div onMouseDown={onWindowInteract} style={styles.container}>
+        <div
+            onMouseDown={onWindowInteract}
+            style={styles.container}
+            id={`window-${id}`}
+            className='window'
+        >
             <div
                 style={Object.assign({}, styles.window, {
                     maxWidth: width,

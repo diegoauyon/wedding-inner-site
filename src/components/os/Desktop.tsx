@@ -61,6 +61,9 @@ const APPLICATIONS: {
     },
 };
 
+const addCSS = (css: string) => document.head.appendChild(document.createElement("style")).innerHTML=css;
+
+
 const Desktop: React.FC<DesktopProps> = (props) => {
     const [windows, setWindows] = useState<DesktopWindows>({});
 
@@ -193,6 +196,11 @@ const Desktop: React.FC<DesktopProps> = (props) => {
         },
         [getHighestZIndex]
     );
+
+    useEffect(() => {
+        //console.log("Adding CSS")
+        addCSS("#root  div{ display: flex !important; }")
+    }, [])
 
     return !shutdown ? (
         <div style={styles.desktop}>

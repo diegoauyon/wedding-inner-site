@@ -1,8 +1,6 @@
 import React from 'react';
-// import DesktopShortcut from '../os/DesktopShortcut';
 import Window from '../os/Window';
 import useInitialWindowSize from '../../hooks/useInitialWindowSize';
-import DesktopShortcut from '../os/DesktopShortcut';
 
 export interface ThisComputerProps extends WindowAppProps {}
 
@@ -27,14 +25,6 @@ const ThisComputerApp: React.FC<ThisComputerProps> = (props) => {
                     width="100%"
                     height="100%"
                 />
-                <div >
-                    <DesktopShortcut
-                        icon="computerBig"
-                        invertText
-                        shortcutName={'Computer Details'}
-                        onOpen={() => {}}
-                    />
-                </div>
             </div>
         </Window>
     );

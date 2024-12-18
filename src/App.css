@@ -1,27 +1,32 @@
 .App {
-    height: 100vh;
+    height: 200vh;
     /* width: 1280px; */
-    width: 100%;
-    /* min-height: 100%; */
+    width: 110vw;
+    min-height: 200vh;
     image-rendering: pixelated;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    
 }
 
 html,
 body {
     height: 100%;
     margin: 0;
-    overflow: hidden;
 }
 
-div {
-    display: flex;
+body, #root, .App {
+    background-color: rgb(62, 150, 151);
 }
+
 
 #root {
     height: 100%;
+    flex: 1;
 }
+
+#root  div {
+    display: block;
+}
+
 
 .white {
     color: #fff;

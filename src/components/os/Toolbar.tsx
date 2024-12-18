@@ -88,7 +88,7 @@ const Toolbar: React.FC<ToolbarProps> = ({
     };
 
     return (
-        <div style={styles.toolbarOuter}>
+        <div style={styles.toolbarOuter} className='toolbar'>
             {startWindowOpen && (
                 <div
                     onMouseDown={onStartWindowClicked}
@@ -191,6 +191,11 @@ const Toolbar: React.FC<ToolbarProps> = ({
 
 const styles: StyleSheetCSS = {
     toolbarOuter: {
+        /**
+         * 
+         * position: sticky;
+            bottom: 0;
+         */
         boxSizing: 'border-box',
         position: 'absolute',
         bottom: 0,

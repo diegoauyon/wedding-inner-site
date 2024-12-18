@@ -1,8 +1,5 @@
 import React from 'react';
 import photo2 from '../../assets/pictures/wedding2.jpg';
-import DesktopShortcut from '../os/DesktopShortcut';
-
-//import { Link } from 'react-router-dom';
 
 export interface InfoProps {}
 
@@ -34,18 +31,37 @@ const Info: React.FC<InfoProps> = (props) => {
                         <h3>Sobre el sitio</h3>
                         <br />
                         <p>
-                          Necesitaba un lugar dónde poner las fotos que me gustaron de nuestra sesión de fotos
+                            Necesitaba un lugar dónde poner las fotos que me
+                            gustaron de nuestra sesión de fotos
                         </p>
                         <br />
                         <p>
-                        Así que hay 2 versiones del sitio, mi versión y la de Gaby :) 
+                            Así que hay 2 versiones del sitio, mi versión y la
+                            de Gaby :)
                         </p>
 
-                        <div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center', flex: 1, textAlign: 'center' , paddingTop: '40px'}}>
-                            <a href="https://info.diegoygaby.com">INFORMACIÓN REAL</a>
-                            <a href="https://info.diegoygaby.com">INFORMACIÓN REAL</a>
-                            <a href="https://info.diegoygaby.com">INFORMACIÓN REAL</a>
-                            <a href="https://info.diegoygaby.com">INFORMACIÓN REAL</a>
+                        <div
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignSelf: 'center',
+                                flex: 1,
+                                textAlign: 'center',
+                                paddingTop: '40px',
+                            }}
+                        >
+                            <a href="https://info.diegoygaby.com">
+                                INFORMACIÓN REAL
+                            </a>
+                            <a href="https://info.diegoygaby.com">
+                                INFORMACIÓN REAL
+                            </a>
+                            <a href="https://info.diegoygaby.com">
+                                INFORMACIÓN REAL
+                            </a>
+                            <a href="https://info.diegoygaby.com">
+                                INFORMACIÓN REAL
+                            </a>
                         </div>
                     </div>
                     <div style={styles.verticalImage}>
@@ -58,7 +74,6 @@ const Info: React.FC<InfoProps> = (props) => {
                     </div>
                 </div>
                 <br />
-               
             </div>
         </div>
     );
