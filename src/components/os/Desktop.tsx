@@ -199,7 +199,7 @@ const Desktop: React.FC<DesktopProps> = (props) => {
 
     useEffect(() => {
         //console.log("Adding CSS")
-        addCSS("#root  div{ display: flex !important; }")
+        //addCSS("#root  div{ display: flex !important; }")
     }, [])
 
     return !shutdown ? (
